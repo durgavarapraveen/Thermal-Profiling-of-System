@@ -1,6 +1,6 @@
 # Thermal-Profiling-of-System
 
-#Libraries to import 
+##Libraries to import 
 To compile and run the provided code successfully, you need to ensure that the necessary libraries are installed. 
 Here are the required packages for the given code:
 
