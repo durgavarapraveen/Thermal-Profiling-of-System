@@ -6,7 +6,6 @@
 #include <signal.h>
 #include <sys/types.h>
 #include <curl/curl.h>
-#include <curl/curl.h>
 
 #define MAX_COMMAND 256
 #define MAX_NOTIFICATION_COMMAND 512
@@ -138,13 +137,6 @@ void extractProcessName(char *processInfo, char *processName) {
     strcpy(processName, token);
 }
 
-// Function to restart a terminated process
-void restartProcess(char *processName) {
-    char command[MAX_COMMAND];
-    sprintf(command, "%s &", processName);
-    system(command);
-    printf("%s process restarted.\n", processName);
-}
 
 // Function to display warning and give the option to terminate a process, put it to sleep, or send a notification
 void warnAndAct(char *processInfo, int sleepDuration) {
